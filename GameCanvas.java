@@ -9,7 +9,7 @@ public class GameCanvas extends JPanel implements ActionListener {
     static final int SCREEN_WIDTH = SNAKE_SIZE * 18;
     static final int SCREEN_HEIGHT = SNAKE_SIZE * 18;
     static final int GAME_UNITS = (SCREEN_WIDTH * SCREEN_HEIGHT) / SNAKE_SIZE;
-    static final int DELAY = 200;
+    static final int DELAY = 100;
 
 
     protected final int[] snakeBodyXCoordinate = new int[GAME_UNITS];
@@ -61,7 +61,7 @@ public class GameCanvas extends JPanel implements ActionListener {
                 }
                 else{
                     g.setColor(Color.cyan);
-                    g.setColor(new Color(random.nextInt(255), random.nextInt(255), random.nextInt(255)));
+                    //g.setColor(new Color(random.nextInt(255), random.nextInt(255), random.nextInt(255)));
                     g.fillRect(snakeBodyXCoordinate[i], snakeBodyYCoordinate[i], SNAKE_SIZE, SNAKE_SIZE);
                 }
             }
